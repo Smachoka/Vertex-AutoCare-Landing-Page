@@ -13,7 +13,7 @@
   --text-color: hsl(0, 0%, 5%);
   --text-color-light: hsl(219, 4%, 55%);
   --white-color: #080808;
-  --body-color: hsl(0, 100%, 99%);
+  --body-color: #ffff;
   --container-color: hsl(219, 4%, 7%);
 
   /*========== Font and typography ==========*/
@@ -118,7 +118,7 @@ img {
 /*=============== HEADER & NAV ===============*/
 .header {
   width: 100%;
-  background-color: transparent;
+
   position: fixed;
   top: 10px;
   left: 0;
@@ -130,6 +130,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #0f172b;
+  padding: 0 1.5rem;
+  max-width: 100%;
 }
 
 .nav__toggle {
@@ -343,12 +346,14 @@ img {
 .about__container {
   row-gap: 6rem;
 }
+
 .about__group {
   position: relative;
 }
 .about__img {
-  width: 280px;
-  border-radius: 5rem;
+  width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 20px;
 }
 .about__card {
   width: 180px;
@@ -450,8 +455,6 @@ img {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
 }
 .offer__data,
 .offer__img {
@@ -462,9 +465,11 @@ img {
 }
 .offer__title {
   margin-bottom: 2rem;
+  color: #fff;
 }
 .offer__description {
   margin-bottom: 3rem;
+  color: #fad5d3;
 }
 .offer__img {
   position: absolute;
@@ -493,6 +498,8 @@ img {
 .footer {
   position: relative;
   overflow: hidden;
+  background-color: #0f172b;
+  color: #f1f8ff;
 }
 .footer .shape__small,
 .footer .shape__big {
@@ -527,15 +534,17 @@ img {
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: 1.25rem;
+  color: #e62e22;
 }
 .footer__links {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+  color: #e62e22;
 }
 .footer__link,
 .footer__social-link {
-  color: var(--white-color);
+  color: #f1f8ff;
   transition: 0.3s;
 }
 .footer__link:hover,
@@ -754,5 +763,59 @@ img {
   .footer__copy {
     margin-top: 8rem;
     padding-bottom: 1rem;
+  }
+}
+/* Style inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #e90f2c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e90f2c;
+}
+
+/* Style the container/contact section */
+.containers {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
 }
