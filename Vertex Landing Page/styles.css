@@ -892,3 +892,7 @@ input[type="submit"]:hover {
     width: 80%;
   }
 }
+.service_title {
+  margin-bottom: 0.25rem;
+  margin-top: 5.5rem;
+}
