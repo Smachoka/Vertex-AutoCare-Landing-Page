@@ -380,67 +380,6 @@ img {
 .about__card-description {
   margin-bottom: 2rem;
 }
-/*=============== POPULAR ===============*/
-.popular__container {
-  padding-top: 1rem;
-}
-
-.popular__card {
-  width: 100%; /* Set to 100% or a specific width greater than the image width */
-  max-width: 300px; /* Optional: Max width to prevent too large cards */
-  position: relative;
-  background-color: var(--container-color);
-  padding: 2rem 1.5rem 1.5rem;
-  border-radius: 1rem;
-  margin-bottom: 3.5rem;
-  overflow: hidden;
-}
-
-.popular__card .shape__smaller {
-  position: absolute;
-  top: -2.5rem;
-  left: -2.5rem;
-}
-
-.popular__title,
-.popular__subtitle,
-.popular__img {
-  position: relative;
-}
-
-.popular__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: 0.25rem;
-}
-
-.popular__subtitle {
-  font-size: var(--normal-font-size);
-  color: var(--text-color);
-  font-weight: 400;
-}
-
-.popular__img {
-  width: 100%; /* Adjusted to fit within the card */
-  max-width: 250px; /* Optional: Set a max width for the image */
-  margin: 0.75rem 0 1.25rem 0; /* Adjusted margin for better alignment */
-  transition: 0.3s;
-}
-
-.popular__price {
-  font-size: var(--h3-font-size);
-}
-
-.popular__card:hover .popular__img {
-  transform: translateY(-0.25rem);
-}
-
-/* Swiper class */
-.swiper-pagination-bullet {
-  background-color: var(--text-color);
-}
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
 
 /*=============== OFFER ===============*/
 .offer {
