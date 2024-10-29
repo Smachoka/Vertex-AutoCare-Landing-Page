@@ -86,9 +86,9 @@ img {
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 1024px;
-  margin-right: 1.5rem;
-  margin-left: 1.5rem;
+  max-width: 1020px;
+  margin: 0 1rem; /* Adjust margin for small screens */
+  padding: 0 1rem;
 }
 
 .grid {
@@ -130,13 +130,13 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0f172b;
-  padding: 0 1.5rem;
-  max-width: 100%;
+
+  padding: 0 1rem;
+  max-width: auto;
 }
 
 .nav__toggle {
-  color: var(--title-color);
+  color: #ffd700;
   display: inline-flex;
 }
 
@@ -173,17 +173,17 @@ img {
   display: flex;
   flex-direction: column;
   text-align: center;
-  row-gap: 2rem;
+  row-gap: 1rem;
   padding-top: 9rem;
 }
 
 .nav__link {
   text-transform: uppercase;
-  color: var(--title-color);
+  color: var(--first-color);
   font-size: var(--h2-font-size);
   font-weight: var(--font-medium);
   transition: 0.3s;
-  color: var(--body-color);
+  color: var(--first-color);
 }
 
 .nav__link:hover {
@@ -192,7 +192,7 @@ img {
 
 .nav__close {
   font-size: 2rem;
-  color: var(--body-color);
+  color: var(--first-color);
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -334,7 +334,7 @@ img {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
-  padding: 1rem 2rem;
+  padding: 0rem 1rem;
   border-radius: 0.25rem;
   font-size: var(--normal-font-size);
   transition: 0.3s;
@@ -344,19 +344,19 @@ img {
 }
 /*=============== ABOUT ===============*/
 .about__container {
-  row-gap: 6rem;
+  row-gap: 0.2rem;
 }
 
 .about__group {
   position: relative;
 }
 .about__img {
-  width: 350px;
+  width: 280px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-top: 20px;
 }
 .about__card {
-  width: 180px;
+  width: 150px;
   position: absolute;
   right: 0;
   bottom: -2.5rem;
@@ -413,7 +413,7 @@ img {
 .offer__img {
   position: absolute;
   max-width: initial;
-  width: 400px;
+  width: 300px;
   bottom: 2rem;
 }
 
